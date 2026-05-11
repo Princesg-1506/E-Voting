@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="voter-authentication.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3fd21ddb84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+            <div class="logo-container">
+                <span class="returning-back" onclick="window.location.href='evotingweb.html'" title="Backward"><i class="fa-solid fa-arrow-left"></i></span>
+                <span class="voting-icon"><i class="fa-solid fa-check-to-slot"></i></span>                
+                <span class="logo"><h1>E-Voting</h1></span>
+            </div>
+
+            <div class="Sign-In-btn">
+                <a href="https://manus.im/app-auth?appId=NGaEnYVUNENb99skYgMcKh&redirectUri=https%3A%2F%2Fe-voting.manus.space%2Fapi%2Foauth%2Fcallback&state=aHR0cHM6Ly9lLXZvdGluZy5tYW51cy5zcGFjZS9hcGkvb2F1dGgvY2FsbGJhY2s%3D&type=signIn"><button>Sign In</button></a>
+            </div>
+        </div>
+
+    <section class="main-container">
+        <div class="top-container">
+            <div class="finger-icon">                
+                <span class="material-icons">fingerprint</span>
+            </div>
+            <heading class="title">Voter Authentication</heading>
+            <p class="title-txt">Enter your matriculation number and OTP to access the</p>
+            <p class="title-txt">voting dashboard and cast your vote.</p>               
+        </div>
+        <div class="info-requirement-container">
+            <div class="input-info">
+                <span class="info-txt">Election</span>
+                <select class="elect-opt." name="election" id="election">
+                    <option>Select an election</option>
+                    <option>Student Council Election</option>
+                    <option>Class Representative Election</option>
+                </select>
+            </div>
+
+            <div class="input-info">
+                <span class="info-txt">Matriculation Number</span>
+                <input class="matric-input" type="text" placeholder="Enter your matriculation number">
+            </div>
+
+            <div class="input-info">
+                <span class="info-txt">OTP Code</span>
+                <input class="otp-input" type="password" placeholder="Enter your OTP">
+                <p>Enter the 6-character OTP provided by your accreditation officer</p>
+            </div>
+
+            <button class="proceed-btn"> 
+                <span>Proceed to vote</span> <span class="material-icons">arrow_forward</span>
+            </button>
+        </div>
+
+        <div class="bottom">
+            <span><i class="fa-solid fa-shield"></i> Your vote is anonymous and securely encrypted</span>
+            <span><a href=""><i class="fa-solid fa-lock"></i> Check my accreditation & voting status</a></span>
+        </div>
+    </section>
+    
+</body>
+</html>
